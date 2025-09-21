@@ -3,9 +3,8 @@ import Image from "next/image"
 import logo from "@/assets/theloveparty-logo.svg"
 import banner from "@/assets/theloveparty-banner.svg"
 import twitch from "@/assets/twitch-black.svg"
-import Link from "next/link"
 import { DarkModeToggle } from "@/components/dark-mode-toggle"
-import { Card } from "@/components/ui/card"
+import { HomeCard } from "@/components/home-card"
 
 export default function Home() {
   return (
@@ -18,22 +17,12 @@ export default function Home() {
           <DarkModeToggle />
         </div>
 
-        {/* Twitch button with lucide icon */}
-        <Card className="flex justify-center w-[18rem] h-[24rem] p-0">
-          <div className="p-[2px] pr-1 pb-1 h-full w-full bg-clip-paddingoverflow-clip">
-            <div
-              className="flex justify-center w-full h-full bg-purple-600/80 p-4 cursor-pointer rounded-[0.5rem] "
-              onClick={() => window.open("https://twitch.tv/theloveparty", "_blank")}
-            >
-              <button className="flex flex-col justify-center items-center gap-8">
-                <Image src={twitch} alt="twitch" width={100} height={100} />
-                <Link href="https://twitch.tv/theloveparty" target="_blank">
-                  <span>@theloveparty</span>
-                </Link>
-              </button>
-            </div>
-          </div>
-        </Card>
+        <HomeCard
+          color="bg-purple-600/80"
+          icon={twitch}
+          title="@theloveparty"
+          href="https://twitch.tv/theloveparty"
+        />
       </div>
     </div>
   )
