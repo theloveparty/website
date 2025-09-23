@@ -30,7 +30,7 @@ export function HomeCard({
           className={`flex flex-col gap-8 items-center justify-center w-full h-full ${color} p-4 cursor-pointer rounded-[0.5rem]`}
           onClick={() => window.open(href, "_blank")}
         >
-          <div className="w-20 h-20 flex flex-col justify-center items-center">
+          <div className="w-16 h-16 md:w-20 md:h-20 flex flex-col justify-center items-center">
             <Image src={icon} alt={title} className="cursor-pointer " />
           </div>
           <Link href={href} target="_blank">
