@@ -4,6 +4,7 @@ import banner from "@/assets/theloveparty-banner.svg"
 import logo from "@/assets/theloveparty-logo.svg"
 import twitch from "@/assets/twitch-black.svg"
 import insta from "@/assets/insta-colour.svg"
+import discord from "@/assets/discord-white.svg"
 import youtube from "@/assets/youtube-red.svg"
 import { DarkModeToggle } from "@/components/dark-mode-toggle"
 import { HomeCard } from "@/components/home-card"
@@ -45,6 +46,7 @@ export default function Home() {
                 title="@theloveparty-au"
                 href="https://www.youtube.com/@theloveparty-au"
               />
+              <HomeCard color="bg-[#5865F2]" icon={discord} title="@theloveparty" href="https://discord.gg/znYxQgJn" />
             </div>
           </div>
         </div>
